@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-.header {
+header {
     background-color: #6f73d2;
     color: #D9F0FF;
     padding: 24px;
@@ -24,13 +24,30 @@ body {
     flex-grow: 1;
     padding: 16px;
 }
-
-.header h1 {
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 40px;
+    margin-top: 0px;
+    background-color: rgb(249, 249, 246);
+    color: #100f0f;
+}
+header h1 {
     font-size: 4rem;
     margin: 0;
     text-align: center;
 }
-
+h2{
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    color: #100f0f;
+}
 .introduction {
     background-color: #d9f0ff;
     border-radius: 20px;
@@ -48,14 +65,20 @@ fieldset {
 }
 
 .user-information {
-    background-color: #d9f0ff;
+    background-color: #4530e2;
     border-radius: 20px;
     margin-top: 24px;
     padding: 16px;
+    color: #d9f0ff;
 }
 
 .user-input {
-   margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;    
+    margin-bottom: 8px; 
+    padding: 10px;
 }
 
 .required {
@@ -67,23 +90,21 @@ fieldset {
     color: red;
     display: inline-block;
 }
-
+.label {
+    display:flex;
+    gap: 5px;
+    padding: 5px;  
+}
 textarea {
     display: block;
-    width: 80%;
-    height: 200px;
+    width: 100%;
+    height: 100px;
 }
 
-input:type[text] {
-    background-color: pink;
-}
 
-input[type=radio] {
-    accent-color: red;
-}
 
 .submit {
-    background-color: #7681b3;
+    background-color: #0b1852;
     border: 1px solid #7681b3;
     border-radius: 10px;
     color: #d9f0ff;
@@ -96,39 +117,56 @@ input[type=radio] {
     color: #7681b3;
 }
 
-.footer {
-    background-color: #7681b3;
-    color: #D9F0FF;
-    padding: 24px;
-    text-align: center;
+
+
+.contact_image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    max-height: 80vh;
 }
 
+/* Description Box Styling */
+.description_box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
 
-.flex-example {
+/* Image/Video Box Styling */
+.imgbox {
+    flex: 1;
     display: flex;
-    padding: 16px;
-    gap: 12px;
-    flex-wrap: wrap;
-    height: 800px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    min-height: 400px;
 }
 
-.square {
-    height: 150px;
-    width: 350px;
-    flex-shrink: 0;
-    background-color: darkviolet;
+/* Responsive Design for Video */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .imgbox {
+        margin-bottom: 20px;
+    }
+    
+    .contact_image {
+        max-width: 100%;
+    }
 }
 
-.square:nth-of-type(1) {
-    background-color: green;
-    height: 250px;
-}
 
-.square:nth-of-type(2) {
-    background-color: aqua;
-    height: 50px;
-}
 
-.square:nth-of-type(3) {
-    background-color: darkslateblue;
-}
+
+

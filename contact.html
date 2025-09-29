@@ -24,63 +24,69 @@
             <li><a href="contact.html" target="_self">Contact US</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>Feel Free To Contact US </h2>
-        <section class="container">           
-            <article>
+    <main> 
+        <section class="container">  
+            <article class ="imgbox">
+                
+                    <img src="./assets/images/contact_us_pic.png" alt="Contact Us Image" class="contact_image"/>
+              
+            </article>                  
+            <article class ="description_box lora-custom ">
                 <div class ="feature_card">
-                <h4> Contact Us</h4>
-                <form action="mailto: someone@gmail.comm" method="POST" enctype="text/plain" class="user-information">
+                <h2>Get In Touch </h2>
+                <form id="contactForm" action="mailto:someone@gmail.com" method="POST" enctype="text/plain" class="user-information">
                 <fieldset>
-                <legend>Your name</legend>
-                <div class="user-input">
-                    
-                    <div class="required">
-                        <label for="first-name">Who are you?</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Enter your first name"
-                            required /> 
-                    </div>
-                </div>
-
-                <div class="user-input">
-                    <label for="last-name">What's your last name?</label>
-                    <input class="required" type="text" name="last-name" id="last-name" placeholder="Enter your family name" />
-                </div>
+                    <legend>Your name</legend>
+                        <div class="user-input">
+                        <label for="name">Name</label>
+                        <input class="required" type="text" name="Name" id="name" placeholder="Enter your name" required />
+                        </div>
                 </fieldset>
+
                 <fieldset>
-                <legend></legend>
+                <legend>Contact Information</legend>
+                        <div class="user-input">
+                        <label for="email"> Email </label>
+                        <input type="email" name="Email" id="email" placeholder="Enter your email address" />
+                        </div>
+                </fieldset>
+
+                <fieldset>
+                <legend>Ask Your Questions</legend>
 
                 <div class="user-input">
-                    <label for="description">Your Query</label>
-                    <textarea name="description" id="description"></textarea>
-                </div>
-
-                <div class="user-input">
-                    <label for="confirm">Confirm</label>
-                    <input type="checkbox" id="confirm" name="confirm" value="confirmed" checked>
+                    <label for="description">Message</label>
+                    <textarea name="Message" id="description" placeholder="Write your message here..." required></textarea>
                 </div>
 
                 
             </fieldset>
 
             <fieldset>
-                <legend></legend>
+                
 
-                <label for="country">Choose your country</label>
-                <select name="country" id="country" placeholder="aussie">
-                    <option disabled>Choose a country</option>
-                    <option value="sweden">Sweden</option>
-                    <option value="denmark">Denmark</option>
-                    <option value="norje">Norway</option>
+                <label class ="label" for="country">Choose your favourite place to visit</label>
+                <div class="user-input">
+                    <select name="Favorite_Place" id="country">
+                    <option value="">Choose a location</option>
+                    <option value="Royal Palace">Royal Palace</option>
+                    <option value="Gamla Stan">Gamla Stan </option>
+                    <option value="Vasa Museum">Vasa Museum</option>
+                    <option value="Stockholm City Hall">Stockholm City Hall</option>
+                    <option value="Archipelago Tours">Archipelago Tours</option>
+                    
                 </select>
+                </div>
+                
             </fieldset>
 
-            <button class="submit">Lets go!!!!</button>
+            <button type="submit" class="submit">Submit</button>
             </form>
 
                     
                   
             </article>
+           
         </section>
     </main>
     

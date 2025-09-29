@@ -25,6 +25,8 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    
+
 }
 
 header{
@@ -119,14 +121,14 @@ main {
     min-height: 100%;
     padding: 40px;
     margin-top: 0px;
-    background-color: rgba(231, 231, 45);
+    background-color: rgb(249, 249, 246);
     color: #100f0f;
 }
 .imgbox{
     display: flex;
     flex: 1;
     justify-content: center;
-    background-color: rgb(222, 237, 11, 0.8);
+    background-color: rgba(246, 247, 242, 0.8);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
