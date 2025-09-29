@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times , sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+.lora-custom {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body{
+    color: #f4f1f1;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header{
+    padding: 50px 10px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(222, 237, 11);
+    min-height: 150px;
+    background-color: rgb(55, 55, 239);  
+}
+header .subtitle{
+    font-style: italic;
+    margin-left: 250px;
+    color: white;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 1px;
+    padding: 10px 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    color :rgba(0, 0, 0, 0.2);
+}
+
+.navbar:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul{
+    list-style-type: none;  
+    display: flex;
+    gap: 40px;  
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+} 
+
+.navbar ul li {
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li a{
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #250998;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Active navigation link styling */
+.navbar ul li a.active {
+    background-color: rgba(37, 9, 152, 0.4);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(37, 9, 152, 0.3);
+}
+
+main {
+    display: flex;
+    flex: 1; 
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 30px;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 40px;
+    margin-top: 0px;
+    background-color: rgba(231, 231, 45);
+    color: #100f0f;
+}
+.imgbox{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background-color: rgb(222, 237, 11, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.imgbox img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+
+.description_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 55, 239);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.feature_card{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px 0 ;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    color :rgba(244, 237, 237,);
+}
+h4{
+    margin-bottom: 15px;
+    color: #f1eeee;
+}
+.description_box p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #f1eeee;
+    margin: 0;
+    text-align: justify;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(55, 55, 239);
+    color: white;
+    font-size: 14px;
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 20px;
+        margin: 22px;
+        border-radius: 15px;
+        max-width: 100%;        
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+    
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar ul li a {
+        display: block;
+        padding: 12px 20px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .imgbox, .description_box {
+        flex: none;
+    }
+    
+    .imgbox img {
+        max-width: 100%;
+    }
+    
+    .description_box {
+        padding: 20px;
+    }
+}
+
+/* iPhone 12 Pro specific (390px width) */
+@media screen and (max-width: 390px) {
+    .navbar {
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 12px;
+    }
+    
+    .navbar ul {
+        gap: 10px;
+    }
+    
+    .navbar ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+    }
+    
+    header {
+        padding: 30px 10px;
+        font-size: 18px;
+    }
+    
+    header h1 {
+        font-size: 1.8em;
+    }
+    
+    header .subtitle {
+        font-size: 0.9em;
+        margin-left: 0;
+        text-align: center;
+    }
+}
