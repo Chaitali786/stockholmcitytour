@@ -25,8 +25,13 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
-
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../assets/images/Stockholm_skyline.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
@@ -36,6 +41,11 @@ header{
     color: rgb(222, 237, 11);
     min-height: 150px;
     background-color: rgb(55, 55, 239);  
+}
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
 }
 header .subtitle{
     font-style: italic;
@@ -97,7 +107,7 @@ header .subtitle{
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Active navigation link styling */
+
 .navbar ul li a.active {
     background-color: rgba(37, 9, 152, 0.4);
     color: #fff;
@@ -121,7 +131,7 @@ main {
     min-height: 100%;
     padding: 40px;
     margin-top: 0px;
-    background-color: rgb(249, 249, 246);
+    background-color: transparent;
     color: #100f0f;
 }
 .imgbox{
@@ -131,6 +141,7 @@ main {
     background-color: rgba(246, 247, 242, 0.8);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 .imgbox img {
@@ -149,40 +160,52 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(55, 55, 239);
+    background-color: rgb(243, 243, 247);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    color :#100f0f;
 }
 
 .feature_card{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: white;
     backdrop-filter: blur(10px);
     width: 100%;
     border-radius: 15px;
     padding: 20px;
-    margin: 10px 0 ;
+    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    color :rgba(244, 237, 237,);
+    color :#2c3e50;
 }
 h4{
     margin-bottom: 15px;
-    color: #f1eeee;
+    color: #2c3e50;
+}
+.feature_card h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1d0ea9;
 }
 .description_box p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.6;
-    color: #f1eeee;
+    color: #2c3e50;
     margin: 0;
     text-align: justify;
+}   
+.intro-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: justify;
+    line-height: 1.5;
 }
-
 
 .footer{
     text-align: center;
