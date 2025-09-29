@@ -149,18 +149,19 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(55, 55, 239);
+    background-color: rgb(243, 243, 247);
     padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    color :#100f0f;
 }
 
 .feature_card{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: white;
     backdrop-filter: blur(10px);
     width: 100%;
     border-radius: 15px;
@@ -169,20 +170,31 @@ main {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
-    color :rgba(244, 237, 237,);
+    color :#2c3e50;
 }
 h4{
     margin-bottom: 15px;
-    color: #f1eeee;
+    color: #2c3e50;
+}
+.feature_card h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #1d0ea9;
 }
 .description_box p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.6;
-    color: #f1eeee;
+    color: #2c3e50;
     margin: 0;
     text-align: justify;
+}   
+.intro-text {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: justify;
+    line-height: 1.5;
 }
-
 
 .footer{
     text-align: center;
