@@ -37,6 +37,11 @@ header{
     min-height: 150px;
     background-color: rgb(55, 55, 239);  
 }
+header h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-align: center;
+}
 header .subtitle{
     font-style: italic;
     margin-left: 250px;
