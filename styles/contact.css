@@ -9,7 +9,7 @@
     min-height: 100%;
     padding: 40px;
     margin-top: 0px;
-    background-color: rgb(249, 249, 246);
+    background-color: transparent;
     color: #100f0f;
 }
 header h1 {
@@ -53,7 +53,7 @@ fieldset {
 }
 
 .user-information {
-    background-color: #f7f7fc;
+    background-color: rgba(247, 247, 252, 0.9);
     border-radius: 20px;
     margin-top: 24px;
     padding: 16px;
@@ -67,6 +67,13 @@ fieldset {
     margin-bottom: 12px;    
     margin-bottom: 8px; 
     padding: 10px;
+}
+.contact_img_text{
+    font-size: 1.2rem;
+    color: #f4efef;
+    margin-top: 10px;
+    text-align: center;
+    max-width: 600px;
 }
 
 .required {

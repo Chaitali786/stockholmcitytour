@@ -25,8 +25,13 @@ body{
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    
-
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../assets/images/Stockholm_skyline.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
@@ -102,7 +107,7 @@ header .subtitle{
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Active navigation link styling */
+
 .navbar ul li a.active {
     background-color: rgba(37, 9, 152, 0.4);
     color: #fff;
@@ -126,7 +131,7 @@ main {
     min-height: 100%;
     padding: 40px;
     margin-top: 0px;
-    background-color: rgb(249, 249, 246);
+    background-color: transparent;
     color: #100f0f;
 }
 .imgbox{
@@ -136,6 +141,7 @@ main {
     background-color: rgba(246, 247, 242, 0.8);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 .imgbox img {
@@ -171,7 +177,7 @@ main {
     width: 100%;
     border-radius: 15px;
     padding: 20px;
-    margin: 10px 0 ;
+    
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
